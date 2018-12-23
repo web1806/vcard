@@ -1,0 +1,41 @@
+<template name="vipCard-01">
+  <view class='vip-01-container'>
+    <view class='vip-01-top-info-container'>
+      <view class='vip-01-top-text-container'>
+        <text class='vip-01-name'>{{card_name}}</text>
+        <view class='vip-01-row-container' style="position:absolute;top:20%;">
+          <text class='vip-01-top-light-text'>{{title}}</text>
+          <view class='vip-01-divider'></view>
+          <text class='vip-01-top-light-text'>{{operation_scope}}</text>
+        </view>
+        <view class='vip-01-row-container' style="position:absolute;top:24.6%;">
+          <image class='vip-01-phone-icon' src='../../images/vip-card/01/ic_phone.png'></image>
+          <text class='vip-01-clickable-text'>{{phone}}</text>
+        </view>
+      </view>
+      <image src='{{qr}}' class='vip-01-qr'></image>
+    </view>
+
+    <view class='vip-01-bottom-info-container '>
+
+      <view class='vip-01-bottom-line-container'>
+        <image class='vip-01-bottom-icon' mode='aspectFit' src='../../images/vip-card/ic_location.png'></image>
+        <text class='vip-01-bottom-text'>{{address}}</text>
+      </view>
+
+      <view class='vip-01-bottom-line-container' style='margin-top: 4%;'>
+        <image class='vip-01-bottom-icon' mode='aspectFit' src='../../images/vip-card/ic_email.png'></image>
+        <text class='vip-01-bottom-text'>{{email}}</text>
+      </view>
+
+      <view class='vip-01-bottom-line-container' style='margin-top: 4%;'>
+        <image class='vip-01-bottom-icon' mode='aspectFit' src='../../images/vip-card/01/ic_web.png'></image>
+        <text class='vip-01-clickable-text'>{{official_website}}</text>
+      </view>
+
+    </view>
+
+    <text class='vip-01-bottom-company'>{{company}}</text>
+
+  </view>
+</template>

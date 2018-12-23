@@ -1,0 +1,94 @@
+/* pages/card-detail/card-detail.wxss */
+@import "../../templates/normal-card/normal-card-template.wxss";
+@import "../../templates/vip-card-01/vip-card-01-template.wxss";
+@import "../../templates/vip-card-02/vip-card-02-template.wxss";
+
+.detail-container {
+  width: 100%;
+  height: 100%;
+}
+
+.card-container {
+  height: 832rpx;
+  position: relative;
+  width: 84%;
+  margin-left: 8%;
+  margin-top: 120rpx;
+}
+
+.bottom-container {
+  width: 92.5%;
+  height: 126rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3.75%;
+  justify-content: center;
+  position: absolute;
+  bottom: 62rpx;
+}
+
+.bottom-choice {
+  width: 64rpx;
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button::after {
+  border: none
+}
+
+.bottom-choice-icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.bottom-choice-text {
+  font-size: 28rpx;
+  margin-top: 0rpx;
+  color: #333;
+}
+
+
+/*名片码*/
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+}
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog {
+  width: 540rpx;
+  height:540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+.modal-title {
+  width:400rpx;
+  height: 400rpx;
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+}

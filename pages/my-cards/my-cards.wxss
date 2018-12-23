@@ -1,0 +1,96 @@
+/* pages/my card/my-card.wxss */
+@import "../../templates/normal-card/normal-card-template.wxss";
+@import "../../templates/vip-card-01/vip-card-01-template.wxss";
+@import "../../templates/vip-card-02/vip-card-02-template.wxss";
+
+.swiper-tab {
+  line-height: 68rpx;
+  width: 72%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-left: 14%;
+  margin-top: 60rpx;
+  background-color: white;
+  border-radius: 34rpx;
+  box-shadow: 0rpx 8rpx 16rpx rgba(181, 181, 181, 0.24);
+}
+
+.tab-item {
+  flex: 1;
+  display: inline-block;
+  color: #0089fc;
+  font-size: 34rpx;
+}
+
+.on {
+  height: 64rpx;
+  vertical-align: middle;
+  color: white;
+  background-color: #0089fc;
+  border-radius: 32rpx;
+}
+
+.swiper {
+  height: 740rpx;
+  width: 100%;
+  margin-top: 60rpx;
+  /* background: black; */
+}
+
+.slide-card {
+  height: 700rpx;
+  position: relative;
+}
+
+.active {
+  width: 92%;
+  margin-left: 4%;
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}
+
+.quiet {
+  transform: scale(0.828);
+  transition: all 0.2s ease-in 0s;
+}
+
+.btn {
+  margin-top: 50rpx;
+  width: 72%;
+  height: 66rpx;
+  position: relative;
+  background: white;
+  border-radius: 33rpx;
+  position: relative;
+  margin-left: 14%;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0rpx 6rpx 12rpx rgba(188, 188, 188, 0.3);
+}
+
+.btn-tap{
+  position:absolute;
+  top:-15rpx;
+  left:0rpx;
+  bottom: 0rpx;
+  right: 0rpx;
+  margin:0 auto;
+}
+
+.btn-text {
+  font-size: 28rpx;
+  text-align: center;
+  padding-bottom: 20rpx;
+  display: relative;
+  vertical-align: middle;
+  color: #333;
+}
+
+.icon-share {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 8rpx;
+  vertical-align: middle;
+}

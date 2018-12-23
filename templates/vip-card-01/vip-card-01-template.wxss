@@ -1,0 +1,111 @@
+.vip-01-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 16rpx 30rpx rgba(155, 155, 155, 0.46);
+  background: #444;
+  /* background-image: "/images/vip-card/01/bg.png" */
+}
+
+.vip-01-top-info-container {
+  width: 100%;
+  height: 16%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 18%;
+}
+
+.vip-01-qr {
+  width: 17%;
+  height: 12.86%;
+  vertical-align: middle;
+  position: absolute;
+  right: 12%;
+  margin-top: 1.5%;
+}
+
+.vip-01-top-text-container {
+  height: 100%;
+  width: 73%;
+  margin-left: 12%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -4rpx;
+}
+
+.vip-01-name {
+  font-size: 85%;
+  color: #fff;
+  /* margin-left: -2rpx; */
+}
+
+.vip-01-row-container {
+  height: 22.8%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.vip-01-top-light-text {
+  font-size: 55%;
+  color: #fff;
+}
+
+.vip-01-clickable-text {
+  font-size: 65%;
+  color: #6bdeff;
+}
+
+.vip-01-phone-icon {
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 2%;
+  position: relative;
+  top: 8rpx;
+}
+
+.vip-01-divider {
+  width: 2rpx;
+  height: 16rpx;
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  margin-top: 8rpx;
+  position: relative;
+  background: #fff;
+}
+
+.vip-01-bottom-info-container {
+  width: 100%;
+  height: 22.7%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30%;
+}
+
+.vip-01-bottom-line-container {
+  width: 100%;
+  height: 18.2%;
+}
+
+.vip-01-bottom-icon {
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 12%;
+  margin-right: 6%;
+  vertical-align: middle;
+  margin-top: 0.6%;
+}
+
+.vip-01-bottom-text {
+  font-size: 65%;
+  color: #fff;
+}
+
+.vip-01-bottom-company {
+  width: 100%;
+  font-size: 70%;
+  position: absolute;
+  color: white;
+  bottom: 4.3%;
+  text-align: center;
+}

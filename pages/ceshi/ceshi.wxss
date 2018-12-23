@@ -1,0 +1,41 @@
+.show-btn {
+    margin-top: 100rpx;
+    color: #22cc22;
+  }
+  .modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+  }
+  .modal-dialog {
+    width: 540rpx;
+    height:540rpx;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+    margin: -180rpx 105rpx;
+    border-radius: 36rpx;
+  }
+  .modal-title {
+    width:400rpx;
+    height: 400rpx;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+  }
+  
+
+  

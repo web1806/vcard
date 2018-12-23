@@ -1,0 +1,48 @@
+<template name="normalCard">
+  <view class='normal-container'>
+    <view class='normal-top-info-container'>
+      <image src='{{qr}}' mode='aspectFit' class='normal-qr'></image>
+      <view class='normal-top-text-container'>
+        <text class='normal-name'>{{card_name}}</text>
+        <view class='normal-company-text-container' style="position:absolute;top:20.6%;">
+          <text class='normal-top-light-text'>{{title}}</text>
+          <view class='normal-divider'></view>
+          <text class='normal-top-light-text'>{{operation_scope}}</text>
+        </view>
+        <text class='normal-top-light-text' style="position:absolute;top:26%;">{{company}}</text>
+      </view>
+    </view>
+
+    <view class='normal-bottom-info-container '>
+
+      <view class='normal-bottom-line-container'>
+        <image wx:if='{{index==0}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_phone_b.png'></image>
+        <image wx:elif='{{index==1}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_phone_y.png'></image>
+        <image wx:elif='{{index==2}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_phone_g.png'></image>
+        <text class='normal-bottom-text'>{{phone}}</text>
+      </view>
+
+      <view class='normal-bottom-line-container' style='margin-top: 4%;'>
+        <image wx:if='{{index==0}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_location_b.png'></image>
+        <image wx:elif='{{index==1}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_location_y.png'></image>
+        <image wx:elif='{{index==2}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_location_g.png'></image>
+        <text class='normal-bottom-text'>{{address}}</text>
+      </view>
+
+      <view class='normal-bottom-line-container' style='margin-top: 4%;'>
+        <image wx:if='{{index==0}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_email_b.png'></image>
+        <image wx:elif='{{index==1}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_email_y.png'></image>
+        <image wx:elif='{{index==2}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_email_g.png'></image>
+        <text class='normal-bottom-text'>{{email}}</text>
+      </view>
+
+      <view class='normal-bottom-line-container' style='margin-top: 4%;'>
+        <image wx:if='{{index==0}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_web_b.png'></image>
+        <image wx:elif='{{index==1}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_web_y.png'></image>
+        <image wx:elif='{{index==2}}' class='normal-bottom-icon' mode='aspectFit'src='../../images/normal-card/ic_web_g.png'></image>
+        <text class='normal-bottom-text'>{{official_website}}</text>
+      </view>
+
+    </view>
+  </view>
+</template>

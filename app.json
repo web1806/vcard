@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/my-cards/my-cards",
+    "pages/card-holder/card-holder",
+    "pages/card-detail/card-detail",
+    "pages/edit-card/edit-card",
+    "pages/edit-preview/edit-preview",
+    "pages/ceshi/ceshi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#0088FC",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/my-cards/my-cards",
+        "text": "我的名片",
+        "iconPath": "/images/main/ic_my_cards_unselect.png",
+        "selectedIconPath": "/images/main/ic_my_cards_select.png"
+      },
+      {
+        "pagePath": "pages/card-holder/card-holder",
+        "text": "名片夹",
+        "iconPath": "/images/main/ic_card_holder_unselect.png",
+        "selectedIconPath": "/images/main/ic_card_holder_select.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

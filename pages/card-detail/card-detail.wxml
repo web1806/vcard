@@ -1,0 +1,30 @@
+<!--pages/card-detail/card-detail.wxml-->
+<import src="../../templates/normal-card/normal-card-template.wxml" />
+<import src="../../templates/vip-card-01/vip-card-01-template.wxml" />
+<import src="../../templates/vip-card-02/vip-card-02-template.wxml" />
+
+<view class='detail-container'>
+
+  <view class='card-container'>
+    <template wx:if="{{cd.index<=2}}" is="normalCard" data="{{...cd}}" />
+    <template wx:elif="{{cd.index==3}}" is="vipCard-01" data="{{...cd}}" />
+    <template wx:elif="{{cd.index==4}}" is="vipCard-02" data="{{...cd}}" />
+  </view>
+  
+  <view class='bottom-container'>
+    <block wx:for="{{bottomTexts}}" wx:key="{{index}}">
+      <button wx:if="{{index==3}}" class='bottom-choice' id="{{index}}" catchtap='bottomTap' open-type="share">
+        <image id="{{index}}" class='bottom-choice-icon' src='{{bottomIcons[index]}}'></image>
+        <text id="{{index}}" class='bottom-choice-text'>{{bottomTexts[index]}}</text>
+      </button>
+      <button wx:elif="{{index!=2}}" class='bottom-choice' id="{{index}}" catchtap='bottomTap'>
+        <image id="{{index}}" class='bottom-choice-icon' src='{{bottomIcons[index]}}'></image>
+        <text id="{{index}}" class='bottom-choice-text'>{{bottomTexts[index]}}</text>
+      </button>
+    </block>
+  </view>
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <image class="modal-title" src="../../images/default_qr.png" mode="aspectFit"></image>
+  </view>
+</view>

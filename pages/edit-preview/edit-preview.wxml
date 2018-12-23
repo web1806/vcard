@@ -1,0 +1,12 @@
+<!--pages/edit-preview/edit-preview.wxml-->
+<import src="../../templates/normal-card/normal-card-template.wxml" />
+<import src="../../templates/vip-card-01/vip-card-01-template.wxml" />
+<import src="../../templates/vip-card-02/vip-card-02-template.wxml" />
+
+<view class='detail-container'>
+  <view class='card-container'>
+    <template wx:if="{{index<=2}}"  is="normalCard" data="{{...items,qr,index}}" />
+    <template wx:elif="{{index==3}}"  is="vipCard-01" data="{{...items}}" />
+    <template wx:elif="{{index==4}}"  is="vipCard-02" data="{{...items}}" />
+  </view>
+</view>

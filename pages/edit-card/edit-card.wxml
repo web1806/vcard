@@ -1,0 +1,35 @@
+<!--pages/edit-card/edit-card.wxml-->
+<import src="../../wxs/common.wxs" module="util" />
+
+<view>
+  <view class='info-container'>
+    <block wx:for="{{keys}}" wx:key="index">
+
+      <view wx:if="{{index!=3}}" class='item-container-common item-container-text'>
+        <text class='item-key'>{{keys[index]}}</text>
+        <input class="input" placeholder-class='placeholder' placeholder='{{values[index]}}' maxlength='{{maxlengths[index]}}' type="{{inputTypes[index]}}"  bindinput="inpt" id="{{index}}"/>
+      </view>
+
+      <view wx:elif="{{index==3}}" class='item-container-common item-container-qr'>
+        <text class='item-key'>{{keys[index]}}</text>
+        <view>
+          <image src='{{qrPath}}' class='qr' mode="aspecFit" catchtap='tapToChooseImage' />
+          <image wx:if="{{hasQR}}" src="/images/detail/ic_cancel.png" class='cancel' mode="aspecFit" catchtap='removeQR' />
+        </view>
+      </view>
+
+      <view wx:if="{{index!=3}}" class='divider-short-container'>
+        <view class='divider-short' />
+      </view>
+
+      <view wx:elif="{{index==3}}" class='divider-long' />
+
+    </block>
+  </view>
+
+  <view class='bottom-container'>
+    <text class='btn' catchtap='previewTap'>预览</text>
+    <text class='btn' style='margin-left:32rpx' catchtap='saveTap'>保存</text>
+  </view>
+
+</view>

@@ -1,0 +1,17 @@
+<template name="cardHolderItem">
+  <view class='item-container'>
+    <image class='avatar' src='{{avatar}}'></image>
+    <view class='item-info'>
+      <view class='item-info-line1'>
+        <text class='item-name'>{{card_name}}</text>
+        <text class='item-title'>{{title}}</text>
+      </view>
+      <view class='item-info-line2'>
+        <text class='item-line2-text'>{{company}}</text>
+        <view class='item-divider'></view>
+        <text class='item-line2-text'>{{operation_scope}}</text>
+      </view>
+    </view>
+    <image src='../../images/ic_phone.png' bindtap='tel' class='item-phone'></image>
+  </view>
+</template>

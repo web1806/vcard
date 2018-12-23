@@ -1,0 +1,82 @@
+.normal-container {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 16rpx 30rpx rgba(155, 155, 155, 0.46);
+}
+
+.normal-top-info-container {
+  width: 100%;
+  height: 16%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 18%;
+  padding-left: 5%;
+}
+
+.normal-qr {
+  width: 20.8%;
+  height: 98.2%;
+}
+
+.normal-top-text-container {
+  /* height: 100%; */
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -4rpx;
+}
+
+.normal-name {
+  font-size: 100%;
+  color: #333;
+}
+
+.normal-company-text-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.normal-top-light-text {
+  font-size: 58%;
+  color: #999;
+}
+
+.normal-divider {
+  width: 2rpx;
+  height: 16rpx;
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  margin-top: 8rpx;
+  position: relative;
+  background: #999;
+}
+
+.normal-bottom-info-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16%;
+  width: 100%;
+  height: 31.4%;
+}
+
+.normal-bottom-line-container {
+  width: 100%;
+  height: 18.2%;
+}
+
+.normal-bottom-icon {
+  width: 7.5%;
+  height: 100%;
+  margin-left: 5.5%;
+  vertical-align: middle;
+}
+
+.normal-bottom-text {
+  height: 100%;
+  text-align: center;
+  font-size: 65%;
+  margin-left: 3.8%;
+  color: #666;
+}

@@ -1,0 +1,60 @@
+var default_cards = [{
+  index: 0,
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 1,
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 2,
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 3,
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 4,
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}]
+
+module.exports = {
+  defCardsData: default_cards
+}

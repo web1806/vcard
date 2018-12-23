@@ -1,0 +1,121 @@
+/* pages/edit-card/edit-card.wxss */
+
+.info-container {
+  width: 690rpx;
+  height: 1108rpx;
+  margin-left: 4%;
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20rpx;
+}
+
+.item-container-common {
+  display: flex;
+  margin-top: 54rpx;
+  width: 540rpx;
+  margin-left: 76rpx;
+}
+
+.item-container-text {
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-container-qr {
+  flex-direction: column;
+}
+
+.input {
+  width: 382rpx;
+  position: absolute;
+  left: 260rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.input-error {
+  width: 382rpx;
+  position: absolute;
+  left: 260rpx;
+  font-size: 24rpx;
+  color: red;
+}
+
+.placeholder {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.divider-short-container {
+  background: white;
+  width: 100%;
+  height: 1px;
+}
+
+.divider-short {
+  background: #e5e5e5;
+  width: 540rpx;
+  height: 100%;
+  margin-left: 76rpx;
+}
+
+.divider-long {
+  background: #e5e5e5;
+  width: 100%;
+  height: 1px;
+  margin-top: 62rpx;
+}
+
+.item-key {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.qr {
+  position: relative;
+  margin-top: 20rpx;
+  width: 90rpx;
+  height: 90rpx;
+  margin-left: 160rpx;
+}
+
+.cancel {
+  width: 32rpx;
+  height: 32rpx;
+  margin-bottom: 80rpx;
+  margin-left: -10rpx;
+  position: relative;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  width: 690rpx;
+  height: 66rpx;
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+  margin-left: 30rpx;
+}
+
+.btn {
+  flex: 1;
+  height: 100%;
+  background: #0088fc;
+  border-radius: 33rpx;
+  justify-content: center;
+  font-size: 28rpx;
+  text-align: center;
+  align-items: center;
+  line-height: 66rpx;
+  color: white;
+}
+
+.btn-text {
+  font-size: 28rpx;
+  text-align: center;
+  display: relative;
+  vertical-align: middle;
+  color: white;
+}

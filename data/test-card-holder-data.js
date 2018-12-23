@@ -1,0 +1,113 @@
+var test_card_holder_data = [{
+  index: 0,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 1,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 2,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 3,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 4,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 5,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 6,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 7,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}, {
+  index: 8,
+  avatar: "../../images/ic_def_avatar.png",
+  qr: "../../images/default_qr.png",
+  card_name: "姓名",
+  title: "职位",
+  company: "公司",
+  phone: "请输入联系方式",
+  address: "请输入地址",
+  official_website: "官网链接",
+  email: "请输入邮箱",
+  operation_scope: "经营范围"
+}]
+
+module.exports = {
+  testCHData: test_card_holder_data
+}

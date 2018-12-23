@@ -1,0 +1,44 @@
+<!--pages/card-holder/card-holder.wxml-->
+<import src="../../templates/card-holder-item/card-holder-item-template.wxml" />
+
+<view>
+
+  <view class='swiper-tab'>
+    <block wx:for="{{tabData}}" wx:key="{{currentTab}}">
+      <view class="tab-item {{currentTab==index ? 'on' : ''}}" bindtap='tabTap' data-current="{{index}}">{{tabData[index]}}</view>
+    </block>
+  </view>
+
+  <swiper class='swiper' style="height:{{winHeight - 108}}rpx" current='{{currentTab}}' bindchange='bindChange'>
+    <block wx:for="{{tabData}}" wx:key="{{currentTab}}">
+      <swiper-item>
+        <scroll-view scroll-y='true' style="height:{{winHeight - 108}}rpx">
+          <block wx:for="{{testCardData}}" wx:key="{{currentItem}}">
+            <view class="item {{index==0 ? 'top' : ''}}" bindlongpress="showDialogBtn" id="{{index}}">
+              <template is="cardHolderItem" data="{{...item}}"/>
+            </view>
+            <view wx:if="{{index<testCardData.length-1}}" class="line-divider">
+              <view class='line-divider-inner'></view>
+            </view>
+          </block>
+          <view class='count-container'>
+            <block wx:for="{{friendsCountText}}" wx:key="{{index}}">
+              <text wx:if="{{index!=1}}" class='count'>{{friendsCountText[index]}}</text>
+              <text wx:else class='count-blue'>{{testCardData.length}}</text>
+            </block>
+          </view>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view>
+    <image src='../../images/u593.png' hidden='{{!floorstatus}}' class='goTop'  bindtap="goTop"></image>
+  </view>
+  <!-- 底部弹窗 -->
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <block wx:for="{{PopupData}}" wx:key="index">
+        <view class="modal-title divider" wx:if="{{index!=0}}" bindtap="onConfirm" bindtap="onCancel" id="{{index}}">{{PopupData[index]}}</view>
+    </block>
+  </view>
+</view>
